@@ -67,6 +67,9 @@ The following list provides the app platform type, the apps that are monitored f
 | Android | Only managed apps | All apps installed on the device | Every 7 days from device enrollment |
 | Android Enterprise | Only managed apps | Only apps installed in the Work Profile | Every 7 days from device enrollment |
 
+>[!NOTE]
+>The Win32 application inventory feature is not available for Hybrid Azure AD joined devices.
+
 The number of discovered apps may not match the app install status count. Possibilities for inconsistencies include:
 - A targeting change of an installed managed app can cause the install count in the status blade to decrement, but remain reported in the detected apps.
 - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
